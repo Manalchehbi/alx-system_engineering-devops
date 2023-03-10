@@ -1,0 +1,5 @@
+#!/bin/bash
+CURRENT_OWNER=$(stat -c %U hello)
+if [ "$CURRENT_OWNER" = "guillaume" ]; then
+  chown betty hello
+fi
